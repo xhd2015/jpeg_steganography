@@ -1,0 +1,15 @@
+I found it's important to share codes online.
+This is a JPEG steganography(e.g. JPEG 隐写) example(and original an assignment by teacher).
+And through this example,you can know how to modify the DCT coefficients of a JPEG file with libjpeg.
+But read more  about how to take use of this source of codes.
+Look at the @filelayout,if you download the whole directory and click 'embed.exe' under that folder,
+you will get the program run properly(without error about missing *.dll files).For some reason to make the code readable,I placed the a cpopy of the supporting .dll & .a files to the @support directory.
+When compile your own code,sure to use command 'gcc -static {yoursrcfile} libjpeg.dll.a libcygwin.a -o {yourexe}'.
+Hope helpful.
+
+Summary: 	written in c language
+		using library libjpeg
+		realized JPEG steganography(JPEG隐写)，mainly by modifying DCT coefficients
+		can  be compiled under cygwin and linux which has installed libjpeg(>=8).
+About libjpeg , see @http://www,ijg.org.
+Time & Date : 2017-03-16 15:22:28
